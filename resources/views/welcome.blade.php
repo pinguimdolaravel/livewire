@@ -15,7 +15,7 @@
             }
         </style>
     </head>
-    <body >
+    <body class="bg-gray-800">
 
 		@include('calculator')
 
