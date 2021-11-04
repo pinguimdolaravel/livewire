@@ -7,7 +7,10 @@ use Livewire\Component;
 
 class Todo extends Component
 {
-    protected $listeners = ['todo::created' => '$refresh'];
+    protected $listeners = [
+        'todo::created' => '$refresh',
+        'todo::deleted' => '$refresh'
+    ];
 
     public function render()
     {
