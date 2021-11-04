@@ -5,7 +5,7 @@
             Pinguim do Laravel | <span class="text-yellow-500">TooooDo</span> App
         </div>
 
-        <input class="p-8 text-white text-3xl bg-gray-800 w-full focus:outline-none focus:border-0" />
+        <livewire:todo.create />
 
         <div class="text-white text-2xl flex justify-between items-center">
             <label for="filter_all">
@@ -23,13 +23,9 @@
         </div>
 
         <div class="p-5 space-y-5">
-
             @foreach ($todos as $todo)
-                <x-todo.item :checked="$todo->checked">
-                    {{ $todo->title }}
-                </x-todo.item>
+                <livewire:todo.item :todo="$todo" :key="$todo->id" />
             @endforeach
-
         </div>
     </div>
 </div>
