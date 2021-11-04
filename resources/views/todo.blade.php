@@ -14,13 +14,11 @@
                     Task 1
                 </x-todo.item>
 
-
                 <x-todo.item :checked="true">
                     Task 2
                 </x-todo.item>
 
             </div>
-
         </div>
     </div>
 </x-app-layout>
